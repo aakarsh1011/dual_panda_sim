@@ -17,10 +17,10 @@ After the sucessful installation of the franka kernel, navigate to the *run_sim_
 # Images 
 
 Running *main.py*
-![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/images/python_script1.png "Initiating the python scrpt")
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/main/images/python_script1.png "Initiating the python scrpt")
 
 Choosing the object and dimensions
-![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/images/python_script2.png "Choosing the object and dimensions")
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/main/images/python_script2.png "Choosing the object and dimensions")
 
 Input has to be provided, if notthing to providing. please use the default values mentioned in the output.
 
@@ -29,15 +29,15 @@ Three windows will be started
 2. Rviz window for each franka emika arm. 
 
 ## Box
-![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/images/box.png "box")
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/main/images/box.png "box")
 
 ## Rod
-![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/images/rod.png "rod")
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/main/images/rod.png "rod")
 
 The orientation of the rod can be adjusted by changing the *<pose>* tag present in the *franka_gazebo/models/rod/model_template.sdf*, present under *<link name='link'>*
 
 ## Stone
-![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/images/stone.png "stone")
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/blob/main/images/stone.png "stone")
 
 
 # Current status
