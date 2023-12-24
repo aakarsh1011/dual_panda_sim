@@ -14,3 +14,31 @@ The official franka kernel installation steps can be found here https://frankaem
 After the sucessful installation of the franka kernel, navigate to the *run_sim_py* folder and run the *main.py* script and follow the instructions
 
 
+# Images 
+
+Running *main.py*
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/images/python_script1.png "Initiating the python scrpt")
+
+Choosing the object and dimensions
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/images/python_script2.png "Choosing the object and dimensions")
+
+Input has to be provided, if notthing to providing. please use the default values mentioned in the output.
+
+Three windows will be started
+1. Gazebo simulation
+2. Rviz window for each franka emika arm. 
+
+## Box
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/images/box.png "box")
+
+## Rod
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/images/rod.png "rod")
+
+The orientation of the rod can be adjusted by changing the *<pose>* tag present in the *franka_gazebo/models/rod/model_template.sdf*, present under *<link name='link'>*
+
+## Stone
+![alt text](https://github.com/aakarsh1011/dual_panda_sim/images/stone.png "stone")
+
+
+# Current status
+Motion planning of each hand 
