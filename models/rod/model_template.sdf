@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='rod'>
+    <link name='link'>
+      <pose>0.0 0.0 0.035 0 -0 0</pose>
+      <inertial>
+        <!-- Adjusted mass and inertia properties -->
+        <!-- Mass is set to 0.1 kg for a lightweight rod -->
+        <!-- Inertia values are adjusted proportionally based on the dimensions -->
+        <mass>{{MASS}} </mass> <!-- Placeholder for mass -->
+        <inertia>
+          <ixx>2.5e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.5e-5</iyy>
+          <iyz>0</iyz>
+          <izz>5e-6</izz>
+        </inertia>
+        <pose>0 0 0 0 -0 0</pose>
+      </inertial>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <enable_wind>0</enable_wind>
+      <pose>0 0 0 0 -0 0</pose>
+      <visual name='visual'>
+        <!-- Adjusted dimensions of the rod -->
+        <geometry>
+          <cylinder>
+            <radius>{{RADIUS}}</radius> <!-- Placeholder for radius -->
+            <length>{{LENGTH}}</length> <!-- Placeholder for length -->
+          </cylinder>
+        </geometry>
+        <material>
+          <!-- Use Gazebo's default material or customize as needed -->
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/White</name>
+          </script>
+          <shader type='pixel'/>
+        </material>
+        <pose>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <!-- Adjusted dimensions of the collision geometry -->
+        <geometry>
+          <cylinder>
+            <radius>{{RADIUS}}</radius> <!-- Placeholder for radius -->
+            <length>{{LENGTH}}</length> <!-- Placeholder for length -->
+          </cylinder>
+        </geometry>
+        <!-- Define friction, bounce, and contact properties as needed -->
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.6</mu>
+              <mu2>0.6</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <!-- Define contact properties as needed -->
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
