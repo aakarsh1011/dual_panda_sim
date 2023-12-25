@@ -27,7 +27,7 @@ def main():
         template_path = "/home/aakarsh/project/catkin_ws/src/franka_ros/franka_gazebo/models/box/model_template.sdf"
         output_path = "/home/aakarsh/project/catkin_ws/src/franka_ros/franka_gazebo/models/box/model.sdf"
         roslaunch_command = "roslaunch franka_gazebo panda_co_op.launch " \
-        "world:=$(rospack find franka_gazebo)/world/box2.sdf " \
+        "world:=$(rospack find franka_gazebo)/world/box.sdf " \
             "controller:=cartesian_impedance_example_controller " \
                 "rviz:=false"
 
