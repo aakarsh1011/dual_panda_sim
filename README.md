@@ -4,7 +4,7 @@ Customizable panda simulation world on gazebo with three objects, *"rod"*, *"sto
 # Abstract
 
 A python script is designed to inquire about the selection of the object along with the dimensions required by the user, to initate a gazebo simulation of the respective object with two panda arms. After the official installation of the franka emika, ros noetic in a ubuntu environment verison 20.04. Store the folder *"run_sim_py"* in the *"franka_gazebo"* folder and contents of repository's *"models"* folder to the *"models"* folder present in the *"franka_gazebo"*.
-![workflow](https://github.com/aakarsh1011/dual_panda_sim/blob/main/images/workflow.png "workflow")
+![workflow](https://github.com/aakarsh1011/dual_panda_sim/blob/main/images/workflow.jpg "workflow")
 
 
 
