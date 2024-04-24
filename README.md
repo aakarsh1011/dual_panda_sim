@@ -66,5 +66,5 @@ roslaunch moveit_setup_assistant setup_assistant.launch
 - Follow the given the link to setup the poses and planners for the arms in setup assistant -- https://ros-planning.github.io/moveit_tutorials/doc/setup_assistant/setup_assistant_tutorial.html
 - Check if the planners are working with launching demo.launch,which will launch rviz with Moveit IDE.
   ```
-  roslaunch {package_name} demo.launch
+  roslaunch {moveit_package_name} demo.launch
   ```
