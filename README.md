@@ -19,6 +19,14 @@ The official franka kernel installation steps can be found here https://frankaem
 
 After the sucessful installation of the franka kernel, navigate to the *run_sim_py* folder and run the *main.py* script and follow the instructions
 
+# Cooperative task script
+
+The repository includes a sample cooperative pick-pass-place routine for the two Panda arms. Run the script after launching the dual-arm simulation and MoveIt:
+
+```
+rosrun franka_gazebo cooperative_task.py
+```
+
 
 # Images 
 
